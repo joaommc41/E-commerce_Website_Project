@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans';
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 100%;
+    position: relative;
+}
+
+body{
+    background: url('https://images.hdqwalls.com/download/2020-bentley-continental-gt-ice-race-8k-gk-1920x1080.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+/* FORM */
+.box {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+    margin-top: -765px;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    height: 830px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    margin: -0px -200px 87px -200px;
+}
+
+.form-box h2 {
+    margin-top: -1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form .input-group {
+    margin-bottom: 10px;
+}
+
+form .input-group label {
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+form .input-group input {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus {
+    border-color: #92b4ff;
+}
+
+form .input-group button {
+    width: 100%;
+    height: 47px;
+    background: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.envio {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.envio input {
+    margin: 10px;
+}
+
+.butaoTabela {
+    color: black;
+}
+
+/* FIM DO FORM */

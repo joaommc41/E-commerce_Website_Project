@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORSE PJG - Compra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCEP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+
+    <!--Aqui começa o Header-->
+
+    <header class="max-largura bg" id="Home">
+        <div class="container">
+            <nav class="menu">
+                <div class="logo"></div>
+                <div class="AreaPrincipal-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Novidades</a></li>
+                        <li><a href="index.html">Destaque</a></li>
+                        <li><a href="index.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Novidades</a></li>
+                        <li><a href="index.html">Destaque</a></li>
+                        <li><a href="index.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+    </header>
+
+    <main>
+
+        <div class="box">
+            <div class="form-box">
+                <h2>Consultar CEP - FRETE</h2>
+                <form action="#">
+                    <fieldset>
+                        <div class="input-group">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" placeholder="Digite o CEP..." autocomplete="off">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" placeholder="Digite o número...">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" readonly>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" readonly>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" readonly>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" readonly>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="estado">Frete:</label>
+                            <input type="text" id="frete" readonly>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="envio">Envio via:</label>
+                        </div>
+
+                        <div class="envio">
+                            <input type="radio" NAME="OPCAO1" VALUE="op1"> SEDEX
+                            <input type="radio" NAME="OPCAO1" VALUE="op1"> LULALOG
+                            <input type="radio" NAME="OPCAO1" VALUE="op1"> TRANSLOG
+                        </div>
+
+                        <div class="input-group">
+                            <a href="tabelaFrete.html" class="butaoTabela"><button>TABELA</a></button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img src="image/logo.png" alt="">
+            <p class="text-pq">Copyright © 2023 <span class="color-laranja">INFOCAR</span> All Rights Reserved</p>
+            <p class="text-pq">Tel: 5555-5555</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+
+        // Menu-Mobile
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        // Scrollbar Personalizado
+
+        var btn = document.querySelector("#back-to-top");
+        btn.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+    <script src="scriptCEP.js"></script>
+</body>
+
+</html>

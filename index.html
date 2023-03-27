@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+
+    <!--Aqui começa o Header-->
+
+    <header class="max-largura bg" id="Home">
+            <div class="container">
+                <nav class="menu">
+                    <div class="logo"></div>
+                    <div class="AreaPrincipal-menu">
+                        <ul>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">Novidades</a></li>
+                            <li><a href="#Service">Destaque</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        <ul id="myLinks">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">Novidades</a></li>
+                            <li><a href="#Service">Destaque</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="call">
+                    <div class="esquerda">
+                        <h1 class="color-azul texto-top">Novos Modelos</h1>
+                        <p class="color-azul texto-pq">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button>Veja mais</button>
+                    </div>
+                    <div class="direita">
+                        <div class="imagem">
+                            <img src="image/porshee.png" alt="">
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <button id="back-to-top">^</button>
+    </header>
+
+    <!--Aqui Termina o Header-->
+
+    <!--Aqui começa o sobreContainer-->
+
+    <section class="max-largura bg2" id="sobreContainer">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="texto-md color-cinza-1">Novidades</h2>
+                <div class="line">
+                    <div class="texto-titulo">Esportivos</div>
+                </div>
+            </div>
+            <div class="baixo">
+                <div class="caixa">
+                    <img src="image/Compra1.jpg" alt="">
+                    <div class="texto">
+                        <h2 class="color-branco">Porsche</h2>
+                        <p class="color-branco">Taycan</p>
+
+                            <div class="encaixeReal">
+                                U$
+                                <input type="number" readonly id="precoProduto1" class="inputValor" value="240000" required>
+                            </div>
+
+                            <div class="encaixeReal">
+                                R$
+                                <input type="number" class="inputValor" id="resultadoConta1" readonly>
+                            </div>
+                            <button class="editarCalcular" onclick="calculeDolar1()">Calcular</button>
+
+                            <a href="paginaCEP.html"><h4 class="color-branco">Confira Frete</h4></a>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <img src="image/Compra2.jpg" alt="">
+                    <div class="texto">
+                        <h2 class="color-branco">Porsche</h2>
+                        <p class="color-branco">Panamera</p>
+
+                            <div class="encaixeReal">
+                                U$
+                                <input type="number" readonly id="precoProduto2" class="inputValor" value="230000" required>
+                            </div>
+
+                            <div class="encaixeReal">
+                                R$
+                                <input type="number" class="inputValor" id="resultadoConta2" readonly>
+                            </div>
+                            <button class="editarCalcular" onclick="calculeDolar2()">Calcular</button>
+
+                            <a href="paginaCEP.html"><h4 class="color-branco">Confira Frete</h4></a>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <img src="image/Compra3.jpg" alt="">
+                    <div class="texto">
+                        <h2 class="color-branco">Porsche</h2>
+                        <p class="color-branco">Macan</p>
+
+                        <div class="encaixeReal">
+                            U$
+                            <input type="number" readonly id="precoProduto3" class="inputValor" value="350000" required>
+                        </div>
+
+                        <div class="encaixeReal">
+                            R$
+                            <input type="number" class="inputValor" id="resultadoConta3" readonly>
+                        </div>
+                        
+                        <button class="editarCalcular" onclick="calculeDolar3()">Calcular</button>
+
+                            <a href="paginaCEP.html"><h4 class="color-branco">Confira Frete</h4></a>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Aqui Termina o sobreContainer-->
+
+    <!--Aqui começa o Service-->
+
+    <section class="max-largura bg" id="Service">
+        <div class="container">
+            <div class="content">
+                <div class="titulo">
+                    <h2 class="texto-md color-cinza-1">Destaque</h2>
+                    <div class="line">
+                        <div class="texto-titulo">Promoções</div>
+                    </div>
+                </div>
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <img src="image/porche2.jpg" alt="">
+                            <button>Comprar Agora</button>
+                        </label>
+
+                        <label class="card" for="item-2" id="song-2">
+                            <img src="image/porche1.jpg">
+                            <button>Comprar Agora</button>
+                        </label>
+
+                        <label class="card" for="item-3" id="song-3">
+                            <img src="image/porshe1.jpg">
+                            <button>Comprar Agora</button>
+                        </label>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Aqui Terminal o Service-->
+
+    <!--Aqui Começa o Contato-->
+
+    <section class="max-largura bg2" id="Contato">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="texto-md color-cinza-1">Contato</h2>
+                <div class="line">
+                    <div class="texto-titulo">Fale Conosco</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="esquerda">
+                    <div class="caixa">
+                        <h1>Nosso Newsletter</h1>
+                        <form action="">
+                            <input type="texto" placeholder="Nome Completo">
+                            <input type="email" placeholder="Seu E-mail">
+                            <input type="submit" value="Inscreva-se">
+                        </form>
+                        <h1>Siga-nos</h1>
+                        <div class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="direita">
+                    <div class="caixa">
+                        <h1>Nosso Endereço</h1>
+                        <div class="info">
+                            <div class="icones">
+                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="texto">
+                                <p>infocar@hotmail.com</p>
+                                <p>+55 99 1571-571</p>
+                                <p>Guarulhos,Brazil</p>
+                                <input type="number" class="inputValor2" id="dolar" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Aqui Termina o Contato-->
+
+    <!--Aqui Começa o footer-->
+
+    <footer>
+        <div class="container">
+            <img src="image/logo.png" alt="">
+            <p class="text-pq">Copyright © 2023 <span class="color-laranja">INFOCAR</span> All Rights Reserved</p>
+            <p class="texto-pq">Tel: 5898-5874</p>
+        </div>
+    </footer>
+
+    <script src="scriptDolar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+
+        // Menu-Mobile
+
+       function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+}
+        // Scrollbar Personalizado
+
+            var btn = document.querySelector("#back-to-top");
+            btn.addEventListener("click", function() {
+                window.scrollTo(0, 0);
+            });
+    </script>
+</body>
+</html>

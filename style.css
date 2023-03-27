@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* #### Framework #### */
+
+html,body{
+    height: 100%;
+}
+
+.max-largura{
+    width: 100%;
+    min-height: auto;
+}
+
+.bg{
+    background: url('https://images.hdqwalls.com/download/2020-bentley-continental-gt-ice-race-8k-gk-1920x1080.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.bg2{
+    /* background: url('https://images.hdqwalls.com/download/2020-bentley-continental-gt-ice-race-8k-gk-1920x1080.jpg') no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+.texto-top{
+    font-size: 72px ;
+}
+
+.texto-md{
+    font-size: 42px;
+}
+
+.texto-pq{
+    font-size: 20px;
+}
+
+.texto-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.color-azul{
+    color: #1B3B56;
+}
+
+.color-azul-1{
+    color: #5271FF;
+}
+
+.color-cinza-2{
+    color: #545454;
+}
+
+.call{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.esquerda{
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.direita{
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.square{
+    width:95%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9D9D9;
+}
+
+img{
+    width: 70%;
+    object-fit: contain;
+}
+
+button{
+    padding: 10px 20px;
+    background: #0159a1;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+button:hover{
+    border: 1px solid #0159a1;
+    background: #ffffff;
+    color: #0159a1;
+    transform: scale(1.10);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    padding: 0 2%;
+    width: 100%;
+    min-height: 800px;
+}
+
+.titulo{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #545454;
+    color: #2B2B2B;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background: #17203F;
+    position: relative;
+    top: 40px;
+}
+
+.texto-titulo{
+    position: relative;
+    top: -10px;
+    z-index: 99;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    font-size: 18px;
+    background: #01294b;
+    color: #fff;
+}
+
+.baixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 300px;
+}
+
+.caixa{
+    width: 20%;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2%;
+    transition: 0.5s ease;
+}
+
+.info{
+    display: flex;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    background:#01294b;
+}
+
+.logo{
+    background: url('image/logo.png') no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 80px;
+    position: relative;
+    top: 0px;
+    z-index: 9;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    padding: 5px 10px;
+    background: #8B634A;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color:#2B2B2B;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+/* #### AreaPrincipal-menu #### */
+
+.AreaPrincipal-menu ul{
+    display: flex;
+}
+
+.AreaPrincipal-menu ul li{
+    padding: 0 25px;
+    list-style-type: none;
+}
+
+.AreaPrincipal-menu ul li a{
+    color:#ffffff;
+    text-shadow: 0 0 5px #ff0000;
+    font-size: 23px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+
+.AreaPrincipal-menu ul li a:hover{
+    color:#ffe5d4;
+    text-shadow: 0 0 5px #000000;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* #### mobile-menu #### */
+
+.mobile-menu{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    background: #01294b;
+    display: none;
+}
+
+.mobile-menu i{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobile-menu ul{
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color:#ffffff;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.mobile-menu ul li a:hover{
+    color:#ffdcc6;
+    text-shadow: 0 0 5px #000000;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* #### Fim do Framework #### */
+
+/* #### Header #### */
+
+header .container{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header .esquerda{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .esquerda h1{
+    text-align: start;
+    font-weight: 400;
+    text-shadow: 0 0 5px #848790;
+    padding: 0 40px;
+}
+
+header .esquerda p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    text-align: start;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #848790;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+header button{
+    margin-top:60px;
+    margin-left: 40px;
+}
+
+header .direita .imagem{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+header .direita .imagem img{
+    width: 85%;
+    object-fit: contain;
+    margin-bottom: 60px;
+}
+
+/* #### Fim do Header #### */
+
+/* #### sobreContainer #### */
+
+#sobreContainer .container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sobreContainer .titulo h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#sobreContainer .caixa{
+    box-shadow: 0 5px 20px #2B2B2B;
+    background:transparent;
+    margin-bottom: 120px;
+}
+
+#sobreContainer .caixa .texto{
+    margin-right: 25px;
+}
+
+#sobreContainer .caixa .texto i{
+    position: relative;
+    bottom: 20px;
+    left: 180px;
+    font-size: 20px;
+}
+
+#sobreContainer .caixa .texto a {
+    text-decoration: none;
+    color: #0159a1;
+}
+
+#sobreContainer .caixa img{
+    width: 100%;
+}
+
+#sobreContainer .caixa h2{
+    margin-top: 40px;
+    text-align:start;
+    font-weight: 3caixa
+}
+
+#sobreContainer .caixa p, span{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align:start;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* #### Fim do sobreContainer #### */
+
+/* #### Service #### */
+
+#Service .titulo h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#Service .caixa{
+    width: 80%;
+    background: #fff;
+}
+
+#Service .caixa img{
+    width:300px;
+    height: 500px;
+    object-fit: contain;
+}
+
+#Service .caixa h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Service .caixa p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Service .container input[type=radio]{
+    display: none;
+}
+#Service .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: -120px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 #848790;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#Service .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+#Service .container .card button{
+    position: absolute;
+    bottom: 10px;
+    z-index: 9;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#Service .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+/* #### Fim do Service #### */
+
+/* #### Contato #### */
+
+#Contato .container{
+    flex-direction: column;
+    height: 90vh;
+}
+
+#Contato .container .titulo{
+    min-height: 0;
+    margin-bottom: 60px;
+}
+
+#Contato .container .esquerda{
+    box-shadow: 0 0 15px #848790;
+    margin: 2%;
+}
+
+#Contato .container .esquerda .caixa{
+    width: 100%;
+    height: 57vh;
+    background: #C3BCB7;
+}
+
+#Contato .container .esquerda .caixa h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #1B3B56;
+}
+
+#Contato .container .esquerda .caixa form{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#Contato .container .esquerda .caixa form input{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#Contato .container .esquerda .caixa .social{
+    color: #1B3B56;
+    font-size: 32px;
+}
+
+#Contato .container .esquerda .caixa .social i{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#Contato .container .esquerda .caixa .social i:hover{
+    color: #fff;
+}
+
+#Contato .container .esquerda .caixa form input[type=submit]{
+    background: #1B3B56;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#Contato .container .esquerda .caixa form input[type=submit]:hover{
+    background: #8B634A;
+}
+
+#Contato .container .direita .caixa{
+    width: 100%;
+    height: 50vh;
+    background: #C3BCB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contato .container .direita .caixa .icones{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Contato .container .direita .caixa .icones i{
+    padding: 20px 0;
+    font-size: 32px;
+    color: #1B3B56;
+}
+
+
+#Contato .container .direita .caixa .texto{
+    width:150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Contato .container .direita .caixa .texto p{
+    padding: 25px 0;
+    font-size:18px;
+    font-weight: 600;
+    color: #1B3B56;
+}
+
+#Contato .container .direita .caixa h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #1B3B56;
+}
+
+#Contato .container .direita{
+    box-shadow: 0 0 15px #848790;
+    margin: 2%;
+}
+
+#Contato .titulo h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#Contato .content{
+    flex-direction:row;
+}
+
+/* #### Fim do Contato #### */
+
+/* #### footer #### */
+
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #C3BCB7;
+}
+
+footer .container img{
+    width: 120px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+footer .container p{
+    font-weight: 600;
+    color: #1B3B56;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* #### Fim do footer #### */
+
+/* #### Responsivo #### */
+
+@media screen and (max-width: 922px){
+
+    .texto-top{
+        font-size: 54px ;
+    }
+    
+    .texto-md{
+        font-size: 28px;
+    }
+    
+    .texto-pq{
+        font-size: 13px;
+    }
+
+    .texto-titulo{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 740px){
+
+    .AreaPrincipal-menu ul{
+        display: none;
+    }
+
+    .texto-top{
+        font-size:42px ;
+    }
+
+    .texto-titulo{
+        font-size: 16px;
+    }
+
+    .mobile-menu ul{
+        display: block;
+    }
+    
+    header .direita .imagem{
+        width: 100%;
+    }
+
+    .titulo{
+        min-height: 150px;
+    }
+
+    .baixo{
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 600px;
+    }
+
+    .caixa{
+        width:60%;
+    }
+
+    #sobreContainer .caixa img{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #Menu .caixa h2{
+        margin-top: 10px;
+     }
+     
+    #Menu .caixa p{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom:0;
+        color: #fff;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    #Contato .direita img{
+        margin-top:60px;
+    }
+
+    footer .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 150px;
+    }
+    footer .container p{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 648px){
+
+    .esquerda{
+        width: 100%;
+        min-height:auto;
+        padding: 0 2%;
+    }
+
+    .direita{
+        width: 100%;
+        min-height: auto;
+        padding: 0 2%;
+        margin-top: -60px;
+    }
+
+    .logo{
+        width: 110px;
+        top: 10px;
+        left: 5px;
+    }
+
+    img{
+        width: 90%;
+    }
+
+    .call{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header .esquerda{
+        margin-top: -100px;
+    }
+
+    header .direita .imagem{
+        width: 60%;
+    }
+
+    #sobreContainer .direita{
+        margin-top: 80px;
+    }
+
+    #sobreContainer .direita img{
+        width: 60%;
+    }
+
+    #Service .container .card{
+        width: 80%;
+        height: auto;
+        top: -20px;
+    }
+
+    #item-1:checked ~ .cards #song-3,
+    #item-2:checked ~ .cards #song-1,
+    #item-3:checked ~ .cards #song-2{
+        transform: translateY(-0%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #song-2,
+    #item-2:checked ~ .cards #song-3,
+    #item-3:checked ~ .cards #song-1{
+        transform: translateY(25%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #Contato .content {
+        flex-direction: column;
+    }
+
+    #Contato .container .esquerda{
+        height: 38vh;
+    }
+
+    #Contato .container .direita{
+        height: 38vh;
+    }
+
+    #Contato .container .esquerda .caixa{
+        width: 80%;
+        height: 35vh;
+    }
+
+    #Contato .container .direita .caixa{
+        width: 80%;
+        height: 35vh;
+    }
+
+    #Contato .container .esquerda .caixa h1{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #Contato .container .esquerda .caixa form{
+        width: 80%;
+    }
+
+    #Contato .container .esquerda .caixa input[type=texto],
+    #Contato .container .esquerda .caixa input[type=email],
+    #Contato .container .esquerda .caixa input[type=submit]{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    #Contato .container .esquerda .caixa .social{
+        margin-bottom: 20px;
+    }
+
+    #Contato .container .esquerda .caixa i{
+        font-size: 22px;
+    }
+
+    #Contato .container .direita .caixa{
+        width: 80%;
+        height: 35vh;
+        justify-content: flex-start;
+    }
+
+    #Contato .container .direita .caixa h1{
+        font-size: 18px;
+    }
+
+    #Contato .container .direita .caixa .icones{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Contato .container .direita .caixa .icones i {
+        font-size: 22px;
+    }
+
+    #Contato .container .direita .caixa .texto{
+        height: 150px;
+    }
+
+    #Contato .container .direita .caixa .texto p {
+        font-size: 16px;
+    }
+}
+
+.inputValor {
+    border: none;
+    font-size: 15px;
+}
+
+.inputValor2 {
+    border: none;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+.encaixeReal {
+    display: flex;
+    /* border: 1px solid green; */
+}
+
+.encaixeReal, div, input {
+    margin-left: 7px;
+}
+
+.editarCalcular {
+    margin-top: 10px;
+}
+
+.tabelaFrete {
+    /* margin-top: -700px; */
+    width: 1050px;
+    margin: -700px -300px 200px 630px;
+
+}
+
+@media screen and (max-width: 428px){
+    
+    header .direita .imagem{
+        width: 80%;
+    }
+}
